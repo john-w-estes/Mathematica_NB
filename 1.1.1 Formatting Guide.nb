@@ -1,0 +1,172 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4991,        163]
+NotebookOptionsPosition[      3917,        122]
+NotebookOutlinePosition[      4264,        137]
+CellTagsIndexPosition[      4221,        134]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["1.1.1 Formatting Guide (Alt + 1)", "Title",
+ CellChangeTimes->{{3.8384722677435236`*^9, 3.838472279595137*^9}, {
+  3.8384723519450383`*^9, 3.83847236150599*^9}}],
+
+Cell["Name, Date ", "Subtitle",
+ CellChangeTimes->{{3.838472302355173*^9, 3.8384723036945324`*^9}, {
+  3.838472363375001*^9, 3.838472365565469*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Section Title (Alt + 4)", "Section",
+ CellChangeTimes->{{3.8384723236357946`*^9, 3.838472327464994*^9}, {
+  3.8384723728955374`*^9, 3.838472382177156*^9}}],
+
+Cell["Things written in text (Alt + 7)", "Text",
+ CellChangeTimes->{{3.838472397386262*^9, 3.838472407976344*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["New Section (Alt + 4)", "Section",
+ CellChangeTimes->{{3.838472416166521*^9, 3.8384724234069166`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples listed as Subsections (Alt + 5) ",
+ StyleBox["You can change text color with the Writing Assistant Palette.",
+  FontColor->GrayLevel[0]]
+}], "Subsection",
+ CellChangeTimes->{{3.8384724333793354`*^9, 3.838472443672265*^9}, {
+  3.838472500203781*^9, 3.8384725132962885`*^9}}],
+
+Cell["The default input of a cell is Wolfram Langauge (code)", "Text",
+ CellChangeTimes->{{3.838472542130974*^9, 3.8384725658275976`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"52", "!"}], "/", 
+  RowBox[{"10", "!"}]}]], "Input",
+ CellChangeTimes->{{3.838472617362442*^9, 3.8384726228385353`*^9}}],
+
+Cell[BoxData["22227230812098731969703658745702096278463818739220480000000000"]\
+, "Output",
+ CellChangeTimes->{3.8384726241645412`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Exercises:", "Section",
+ CellChangeTimes->{{3.838472662697274*^9, 3.838472673158456*^9}}],
+
+Cell["Open a new nb file.", "Text",
+ CellChangeTimes->{{3.838472675929377*^9, 3.8384726839217396`*^9}}],
+
+Cell[TextData[{
+ "Exercise 1: ",
+ StyleBox["Create a title that reads 1.1.1 Formatting Guide. Underneath the \
+title, create a subtitle with your name and the date.",
+  FontColor->GrayLevel[0]]
+}], "Subsection",
+ CellChangeTimes->{{3.8384726911024485`*^9, 3.838472734780135*^9}}],
+
+Cell["Exercise 2: Insert a section that reads Section 1.", "Subsection",
+ CellChangeTimes->{{3.838472749000346*^9, 3.838472750829384*^9}, {
+  3.8384728799286127`*^9, 3.838472907608874*^9}}],
+
+Cell["\<\
+Exercise 3: Insert a subsection underneath your section that reads Subsection \
+1: Writing with Text.\
+\>", "Subsection",
+ CellChangeTimes->{{3.8384729120483217`*^9, 3.8384729444999866`*^9}}],
+
+Cell["\<\
+Exercise 4: Underneath Subsection I, insert a second subsection that reads \
+Subsection II: Using Wolfram Language.\
+\>", "Subsection",
+ CellChangeTimes->{{3.8384729512888155`*^9, 3.8384729852008934`*^9}}],
+
+Cell["\<\
+Exercise 5: Place your cursor between the cells of Subsection I and \
+Subsection II. Insert a text cell that says, \[OpenCurlyDoubleQuote]How many \
+ways can we select 4 winners out of a group of 50 people?\
+\[CloseCurlyDoubleQuote].\
+\>", "Subsection",
+ CellChangeTimes->{{3.83847299100172*^9, 3.8384730581528854`*^9}}],
+
+Cell["\<\
+Exercise 6: Beneath Subsection II, answer this previous question by typing \
+the calculation in Wolfram Language .\
+\>", "Subsection",
+ CellChangeTimes->{{3.8384730637812376`*^9, 3.838473088661477*^9}, {
+  3.8388217552851553`*^9, 3.8388217698735704`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1368, 829},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 167, 2, 101, "Title"],
+Cell[750, 26, 148, 2, 56, "Subtitle"],
+Cell[CellGroupData[{
+Cell[923, 32, 161, 2, 70, "Section"],
+Cell[1087, 36, 114, 1, 30, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1238, 42, 108, 1, 70, "Section"],
+Cell[CellGroupData[{
+Cell[1371, 47, 300, 6, 49, "Subsection"],
+Cell[1674, 55, 138, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[1837, 60, 155, 4, 31, "Input"],
+Cell[1995, 66, 135, 2, 31, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2191, 75, 95, 1, 70, "Section"],
+Cell[2289, 78, 103, 1, 30, "Text"],
+Cell[2395, 81, 279, 6, 49, "Subsection"],
+Cell[2677, 89, 189, 2, 41, "Subsection"],
+Cell[2869, 93, 201, 4, 41, "Subsection"],
+Cell[3073, 99, 215, 4, 41, "Subsection"],
+Cell[3291, 105, 330, 6, 71, "Subsection"],
+Cell[3624, 113, 265, 5, 41, "Subsection"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
