@@ -1,0 +1,156 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5384,        147]
+NotebookOptionsPosition[      4756,        122]
+NotebookOutlinePosition[      5102,        137]
+CellTagsIndexPosition[      5059,        134]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Calculus Lab 2.1.1 Rates of Change and Tangents", "Title",
+ CellChangeTimes->{{3.8662368581837325`*^9, 3.8662368598815126`*^9}},
+ ExpressionUUID -> "52bf91d2-0a4f-4848-b43e-a1074a82aada"],
+
+Cell["Name, Date", "Subtitle",
+ ExpressionUUID -> "8e89d7de-6da3-4a6e-9e8d-e9c2a38292e3"],
+
+Cell["\<\
+Graph f(x) along with five secant lines at the indicated x-value \
+corresponding to difference quotients with h-values of 1, 0.5, 0.2, 0.1, and \
+0.01 respectively. Conjecture a possible equation for the tangent line.\
+\>", "Subsection",
+ CellChangeTimes->{{3.832019549108758*^9, 3.8320195534343634`*^9}, {
+  3.832190645340068*^9, 3.832190645664839*^9}, {3.867145454799144*^9, 
+  3.867145459957286*^9}, {3.867146083952355*^9, 3.8671460875773516`*^9}},
+ FontColor->RGBColor[
+  0.01568627450980392, 0.1607843137254902, 0.22745098039215686`],
+ ExpressionUUID -> "9d910f55-4aa6-437b-b16e-cde891075b1c"],
+
+Cell["\<\
+Exercise 1: Graph f(x) = x^2 -3x - 4 along with five secant lines at x = 2 \
+corresponding. to the difference quotients with h-values of 1, 0.5, 0.2, 0.1, \
+and 0.01 respectively. Conjecture a possible equation for the tangent line. \
+\>", "Subsection",
+ CellChangeTimes->{{3.8321906715049644`*^9, 3.83219067891506*^9}, {
+  3.866236630035571*^9, 3.866236663553854*^9}, {3.866236742860323*^9, 
+  3.866236817235111*^9}},
+ ExpressionUUID -> "390e8c7d-d7e7-4722-9a0d-ed6b6fba1a18"],
+
+Cell["\<\
+Exercise 2: Graph f(x) = 3Sqrt(x) along with five secant lines at x = 4 \
+corresponding. to the difference quotients with h-values of 1, 0.5, 0.2, 0.1, \
+and 0.01 respectively. Conjecture a possible equation for the tangent line.\
+\>", "Subsection",
+ CellChangeTimes->{{3.8321907118361664`*^9, 3.8321907130256195`*^9}, {
+  3.866236647012775*^9, 3.866236661766323*^9}, {3.8662368243132095`*^9, 
+  3.866236838161105*^9}},
+ ExpressionUUID -> "21b0915b-bca8-49b6-8ae4-11e0078f46e9"],
+
+Cell["\<\
+Exercise 3: Graph g(x) = (-2x+1)(3-x) along with d(x) = (g(x + \
+0.001)-g(x))/0.001 together. Explain how the function values of d(x) are \
+reflected on the graph of g(x).\
+\>", "Subsection",
+ CellChangeTimes->{{3.8320194539105854`*^9, 3.832019456938747*^9}, {
+  3.832190698735278*^9, 3.832190724267272*^9}, {3.866236666134384*^9, 
+  3.8662367243552136`*^9}},
+ ExpressionUUID -> "eb04e261-8a99-408c-809e-aaf0875d4606"],
+
+Cell[CellGroupData[{
+
+Cell["Reference:", "Section",
+ ExpressionUUID -> "14737d44-3003-47d0-a7d5-941549f3481e"],
+
+Cell["\<\
+Sisson, P., Szarvas, T. (2016).\[NonBreakingSpace]Calculus with Early \
+Transcendentals. Mount Pleasant, SC: Hawkes Learning.\
+\>", "Text",
+ ExpressionUUID -> "c2e0de55-b8a9-4841-870f-00a7f8c389ef"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"colors", "[", 
+     RowBox[{"r_", ",", "g_", ",", "b_"}], "]"}], ":=", 
+    RowBox[{"RGBColor", "[", 
+     RowBox[{
+      RowBox[{"r", "/", "255"}], ",", 
+      RowBox[{"g", "/", "255"}], ",", 
+      RowBox[{"b", "/", "255"}]}], "]"}]}], "\n", 
+   RowBox[{
+    RowBox[{"navy1", "=", 
+     RowBox[{"colors", "[", 
+      RowBox[{"4", ",", "28", ",", "50"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"navy2", "=", 
+     RowBox[{"colors", "[", 
+      RowBox[{"4", ",", "41", ",", "58"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"navy3", " ", "=", " ", 
+     RowBox[{"colors", "[", 
+      RowBox[{"6", ",", "70", ",", "99"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"melon", " ", "=", " ", 
+     RowBox[{"colors", "[", 
+      RowBox[{"236", ",", "179", ",", "101"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"turq", " ", "=", " ", 
+     RowBox[{"colors", "[", 
+      RowBox[{"3", ",", "196", ",", "161"}], "]"}]}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.867104823566722*^9, 3.8671048258807964`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1368, 829},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"jestes.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 193, 2, 117, "Title"],
+Cell[776, 26, 89, 1, 56, "Subtitle"],
+Cell[868, 29, 608, 10, 79, "Subsection"],
+Cell[1479, 41, 487, 8, 71, "Subsection"],
+Cell[1969, 51, 488, 8, 71, "Subsection"],
+Cell[2460, 61, 428, 8, 71, "Subsection"],
+Cell[CellGroupData[{
+Cell[2913, 73, 88, 1, 60, "Section"],
+Cell[3004, 76, 208, 4, 30, "Text"],
+Cell[3215, 82, 1513, 36, 492, "Input"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
